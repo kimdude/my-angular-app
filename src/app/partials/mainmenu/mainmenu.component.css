@@ -1,0 +1,50 @@
+button {
+    background-color: transparent;
+    border: none;
+}
+
+span {
+    display: flex;
+    margin: 4px;
+    height: 2px;
+    width: 20px;
+    background-color: black;
+}
+
+#close {
+    flex-direction: column;
+}
+
+#span1 {
+    transform: rotate(38deg);
+}
+
+#span2 {
+    margin-top: -6px;
+    transform: rotate(-38deg);
+}
+
+nav {
+    align-content: center;
+    justify-self: right;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    padding: 10px 20px;
+}
+
+.active {
+    color: red;
+}
+
+
+@media screen and (max-width: 640px) {
+    ul { flex-direction: column; }
+    nav { justify-items: center; }
+}

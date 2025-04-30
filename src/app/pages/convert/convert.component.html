@@ -1,0 +1,18 @@
+<h1>Konverterare</h1>
+<!-- Select units to convert -->
+<label for="units">Konvertera från: </label>
+<select id="units" name="units" (change)="newUnits($event)">
+    <option>Meter till Feet</option>
+    <option>Feet till Meter</option>
+    <option>Celcius till Fahrenheit</option>
+    <option>Fahrenheit till Celcius</option>
+</select> 
+<!-- Div with conversion input -->
+<div>
+    <label for="numA"> {{ unit1 }}: </label>
+    <input type="number" id="numA" name="numA" [(ngModel)]="numA">
+    
+    <button (click)="convert()">Konvertera</button><br>
+    
+    <p>{{ unit2 }}: {{ result }}</p>
+</div>
