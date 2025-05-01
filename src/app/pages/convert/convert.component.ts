@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { FormulasComponent } from "../../partials/formulas/formulas.component";
 
 @Component({
   selector: 'app-convert',
-  imports: [FormsModule], //Adding forms module
+  imports: [FormsModule, FormulasComponent], //Adding forms module
   templateUrl: './convert.component.html',
   styleUrl: './convert.component.css'
 })

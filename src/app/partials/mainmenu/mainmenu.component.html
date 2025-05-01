@@ -1,14 +1,17 @@
-<button [style.display]="openBtn" (click)="displayNav()">
+<!-- Button to toggle menu -->
+<button [style.display]="openBtn" (click)="displayNav()" id="toggleOpn">
     <span></span>
     <span></span>
     <span></span>
 </button>
+<!-- Navigation -->
 <nav [style.display]="navStyle">
     <ul>
         <a routerLink="/home" routerLinkActive="active"><li>Startsida</li></a>
         <a routerLink="/convert" routerLinkActive="active"><li>Konverterare</li></a>
         <a routerLink="/about" routerLinkActive="active"><li>Om sidan</li></a>
     </ul>
+    <!-- Button to toggle menu -->
     <button [style.display]="closeBtn" (click)="displayNav()" id="close">
         <span id="span1"></span>
         <span id="span2"></span>

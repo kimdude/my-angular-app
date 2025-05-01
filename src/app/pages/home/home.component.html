@@ -1,1 +1,12 @@
-<p>home works!</p>
+<!-- Homepage -->
+<h1>Meter vs Feet & Celsius vs Fahrenheit</h1>
+<div>
+    <!-- Forloop iterating array -->
+    @for(image of gallery; track $index) {
+        <article>
+            <img [src]="image.image" alt= "{{ image.name }}">
+            <p><strong>{{ image.name }}</strong></p>
+            <p>{{ image.meters }} m - {{ image.feet }} fot</p>
+        </article>
+    }
+</div>

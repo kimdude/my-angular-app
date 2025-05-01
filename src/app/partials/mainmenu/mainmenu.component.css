@@ -1,14 +1,20 @@
+/* Menu-buttons design*/
 button {
     background-color: transparent;
     border: none;
 }
 
+#toggleOpn {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
 span {
     display: flex;
-    margin: 4px;
-    height: 2px;
-    width: 20px;
-    background-color: black;
+    margin: 5px;
+    height: 3px;
+    width: 25px;
+    background-color: #bee4e7;
 }
 
 #close {
@@ -20,31 +26,42 @@ span {
 }
 
 #span2 {
-    margin-top: -6px;
+    margin-top: -8px;
     transform: rotate(-38deg);
 }
 
+/* Navigation design */
 nav {
+    height: 100px;
     align-content: center;
     justify-self: right;
+    margin-right: 20px;
 }
 
 ul {
     display: flex;
+    margin: 0px;
     list-style-type: none;
 }
 
 a {
-    color: black;
-    padding: 10px 20px;
+    margin: 0px;
+    padding: 41px 20px;
+    color: #bee4e7;
+    text-decoration: none;
 }
 
 .active {
-    color: red;
+    color: rgb(38, 39, 41);
+    font-weight: 600;
+    background-color: #bee4e7;
 }
 
-
+/* Screens under 640px */
 @media screen and (max-width: 640px) {
     ul { flex-direction: column; }
-    nav { justify-items: center; }
+    nav { justify-items: center; height: 450px; margin-right: 0px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5); background-color: rgb(19, 93, 116); }
+    ul { padding: 0px; }
+    a { padding: 41px 30px; }
+    #close { padding: 20px; }
 }

@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* General design */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #95c7c2;
+}
+
+h1 {
+    color: rgb(19, 93, 116);
+}
+
+p {
+    color: rgb(38, 39, 41);
 }

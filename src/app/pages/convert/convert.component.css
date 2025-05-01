@@ -1,0 +1,16 @@
+/* Inputs design */
+div {
+    margin-top: 20px;
+}
+
+input {
+    margin-right: 10px;
+}
+
+/* Design for section with component */
+section {
+    margin-top: 40px;
+    background-color: #dcfdfa;
+    border-radius: 25px;
+    padding: 10px 5%;
+}
